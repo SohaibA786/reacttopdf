@@ -1,0 +1,167 @@
+.project-overview {
+    background-color: white !important;
+    /* background: url('./Assets/title-back.jpeg'), lightgray 50% / cover no-repeat, linear-gradient(185deg, rgba(255, 255, 255, 0.46) 0%, rgba(166, 222, 255, 0.46) 100%), #FFF; */
+    /* background: linear-gradient(185deg, rgba(255, 255, 255, 0.46) 0%, rgba(166, 222, 255, 0.46) 100%); */
+    /* background-color: pink; */
+
+
+    width: 595px;
+    height: 842px;
+    padding: 30px 50px;
+    position: relative;
+    /* z-index: 10; */
+    overflow: hidden;
+}
+
+/* Patterns */
+.project-overview .pattern-1 {
+    position: absolute;
+    top: calc(-19px);
+    left: calc(563px + 92px);
+}
+
+.project-overview .pattern-2 {
+    position: absolute;
+    top: calc(544px + 50px);
+    left: calc(-52px);
+}
+
+.po-body {
+    margin: 56px 0;
+    position: relative;
+}
+
+.po-body>p {
+    color: #003970;
+    font-variant-numeric: lining-nums tabular-nums;
+    font-feature-settings: 'clig' off, 'liga' off;
+
+    /* Report/Header 1 */
+    font-family: Plus Jakarta Sans;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 0;
+    letter-spacing: -0.572px;
+}
+
+.po-body .info {
+    margin: 30px 0;
+}
+
+.po-body .info>p {
+    color: #003970;
+    text-align: left;
+    font-variant-numeric: lining-nums tabular-nums;
+    font-feature-settings: 'clig' off, 'liga' off;
+
+    /* Report/Header 5 */
+    font-family: Plus Jakarta Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: -0.572px;
+}
+
+
+
+/* Data Tables */
+.po-body .data-tables {
+    display: flex;
+    gap: 45px;
+}
+
+.po-body .render-function .render-table {
+    width: 225px;
+    max-width: 225px;
+    border-spacing: 0px;
+    border-collapse: collapse;
+    /* border-top: 2px solid red; */
+
+}
+
+.po-body .render-function p {
+    color: #003970;
+    text-align: left;
+    font-variant-numeric: lining-nums tabular-nums;
+    font-feature-settings: 'clig' off, 'liga' off;
+
+    /* Report/Header 5 */
+    font-family: Plus Jakarta Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 0;
+    letter-spacing: -0.572px;
+}
+
+.po-body .render-table thead {
+    color: #000;
+    font-variant-numeric: lining-nums tabular-nums;
+    font-feature-settings: 'clig' off, 'liga' off;
+
+    /* Report/Body/Regular */
+    font-family: Plus Jakarta Sans;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -0.572px;
+    text-align: left;
+    /* outline: 1px solid #000; */
+}
+
+.po-body .render-table .left {
+    color: #000;
+    font-variant-numeric: lining-nums tabular-nums;
+    font-feature-settings: 'clig' off, 'liga' off;
+
+    /* Report/Body/Small */
+    font-family: Plus Jakarta Sans;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -0.572px;
+}
+
+.po-body .render-table .right {
+    color: #000;
+    font-variant-numeric: lining-nums tabular-nums;
+    font-feature-settings: 'clig' off, 'liga' off;
+
+    /* Report/Header 6 */
+    font-family: Plus Jakarta Sans;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: -0.572px;
+}
+
+.po-body .render-table thead td:nth-child(1) {
+    padding: 5px 0px 5px 15px;
+}
+
+.po-body .render-table thead td:nth-child(2) {
+    padding: 5px 15px 5px 15px;
+}
+
+.po-body .render-table tbody {
+    border-top: 1px solid #A3A3A3;
+    border-bottom: 1px solid #A3A3A3;
+}
+
+.po-body .render-table .left {
+    padding: 5px 0px 5px 15px;
+}
+
+.po-body .render-table .right {
+    padding: 5px 15px 5px 15px;
+}
+
+.po-body .render-table tbody tr:nth-child(odd) {
+    background-color: #EEE;
+    /* outline: 1px solid #000; */
+}
