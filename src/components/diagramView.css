@@ -1,0 +1,57 @@
+.diagram-view {
+    background-color: white !important;
+    width: calc(595px - 100px);
+    height: calc(842px - 60px);
+    padding: 30px 50px;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Patterns */
+.diagram-view .pattern-1 {
+    position: absolute;
+    top: calc(-19px);
+    left: calc(554px);
+}
+
+.diagram-view .pattern-2 {
+    position: absolute;
+    top: calc(544px);
+    left: calc(-53px);
+}
+
+.dv-body {
+    margin: 50px 0;
+    position: relative;
+}
+
+.dv-body>p {
+    color: #003970;
+    font-variant-numeric: lining-nums tabular-nums;
+    font-feature-settings: 'clig' off, 'liga' off;
+
+    /* Report/Header 5 */
+    font-family: Plus Jakarta Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: -0.572px;
+    margin-bottom: 20px;
+}
+
+
+.dv-body .img {
+    width: 412.429px;
+    height: 283.984px;
+    margin: auto;
+    display: block;
+    margin-bottom: 20px;
+}
+
+.dv-body .img1 {
+    width: 412.429px;
+    height: 240.888px;
+    margin: auto;
+    display: block;
+}

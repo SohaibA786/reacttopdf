@@ -5,20 +5,20 @@ import Footer from './subComponents/footer';
 const ProjectOverview = () => {
     let projectInfo = [
         {
-            title: 'Ground elevation',
+            title: 'Project Name',
+            value: 'A19 South Exelby',
+        },
+        {
+            title: 'Address',
             value: 'A19 Southbound, Ingleby Arncliffe, Northallerton DL6 3LG, UK',
         },
         {
             title: 'Ground elevation',
-            value: 'A19 Southbound, Ingleby Arncliffe, Northallerton DL6 3LG, UK',
+            value: '76.94m',
         },
         {
-            title: 'Ground elevation',
-            value: 'A19 Southbound, Ingleby Arncliffe, Northallerton DL6 3LG, UK',
-        },
-        {
-            title: 'Ground elevation',
-            value: 'A19 Southbound, Ingleby Arncliffe, Northallerton DL6 3LG, UK',
+            title: 'Author',
+            value: 'Aditya Garimella',
         },
     ]
 
@@ -42,6 +42,48 @@ const ProjectOverview = () => {
     ]
 
     let pvPanel = [
+        {
+            title: 'Number of PV modules',
+            value: '104.5kWp',
+        },
+        {
+            title: 'Number of PV modules',
+            value: '104.5kWp',
+        },
+        {
+            title: 'Number of PV modules',
+            value: '104.5kWp',
+        },
+    ]
+    let solarStructure = [
+        {
+            title: 'Number of Mounting structures',
+            value: '100kW',
+        },
+        {
+            title: 'Number of PV modules',
+            value: '104.5kWp',
+        },
+        {
+            title: 'Number of PV modules',
+            value: '104.5kWp',
+        },
+    ]
+    let inverter = [
+        {
+            title: 'Number of PV modules',
+            value: '104.5kWp',
+        },
+        {
+            title: 'Number of PV modules',
+            value: '104.5kWp',
+        },
+        {
+            title: 'Number of PV modules',
+            value: '104.5kWp',
+        },
+    ]
+    let environmentalBenifits = [
         {
             title: 'Number of PV modules',
             value: '104.5kWp',
@@ -83,8 +125,8 @@ const ProjectOverview = () => {
     }
 
     return (
-        <div className='project-overview'>
-            {/* Patters */}
+        <div  id='project-overview' className='project-overview'>
+            {/* Patterns */}
             <img className='pattern-1' src='./Assets/pattern.svg' alt='pattern' />
             <img className='pattern-2' src='./Assets/pattern.svg' alt='pattern' />
             {/* Header */}
@@ -128,11 +170,11 @@ const ProjectOverview = () => {
                     {/* PV Panel */}
                     {tableRender("PV Panel", pvPanel)}
                     {/* PV Panel */}
-                    {tableRender("PV Panel", pvPanel)}
+                    {tableRender("Solar Structure", solarStructure)}
                     {/* PV Panel */}
-                    {tableRender("PV Panel", pvPanel)}
+                    {tableRender("Inverter", inverter)}
                     {/* PV Panel */}
-                    {tableRender("PV Panel", pvPanel)}
+                    {tableRender("Environmental Benefits", environmentalBenifits)}
                 </div>
             </main>
 

@@ -14,7 +14,7 @@ const Disclaimer = () => {
         <div id='' className='disclaimer-page'>
             {/* Background Image */}
             <div className='background-image' />
-            {/* Patters */}
+            {/* Patterns */}
             <img className='pattern-1' src='./Assets/pattern.svg' alt='pattern' />
             <img className='pattern-2' src='./Assets/pattern.svg' alt='pattern' />
             {/* Header */}

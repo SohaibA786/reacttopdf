@@ -7,6 +7,7 @@
     gap: 193.405px;
     flex-shrink: 0;
     position: relative;
+    margin-bottom: 12px;
 }
 
 .title-page-header-left {
@@ -27,7 +28,7 @@
     font-size: 22.313px;
     font-style: normal;
     font-weight: 400;
-    line-height: 211.5%;
+    line-height: 0;
     /* 47.191px */
 }
 

@@ -3,7 +3,7 @@
     height: 100%;
     background-image: url('./Assets/title-back.jpeg');
     /* background-blend-mode: lighten; */
-    opacity: 0.15;
+    opacity: 0.12;
     background-position: center;
     /* background-attachment: fixed; */
     background-size: cover;
@@ -16,34 +16,30 @@
 
 .title-page {
     background-color: white !important;
-    /* background: url('./Assets/title-back.jpeg'), lightgray 50% / cover no-repeat, linear-gradient(185deg, rgba(255, 255, 255, 0.46) 0%, rgba(166, 222, 255, 0.46) 100%), #FFF; */
     background: linear-gradient(185deg, rgba(255, 255, 255, 0.46) 0%, rgba(166, 222, 255, 0.46) 100%);
-    /* background-color: pink; */
-    
 
-    width: 595px;
-    height: 842px;
+    width: calc(595px - 100px);
+    height: calc(842px - 60px);
     padding: 30px 50px;
     position: relative;
-    /* z-index: 10; */
     overflow: hidden;
 }
 
 /* Patterns */
 .title-page .pattern-1 {
     position: absolute;
-    top: calc(295px + 20px);
-    left: calc(524px + 80px);
+    top: calc(295px);
+    left: calc(524px);
 }
 
 .title-page .pattern-2 {
     position: absolute;
-    top: calc(508px + 50px);
+    top: calc(508px);
     left: calc(-6px);
 }
 
 .title-page-body {
-    margin: 56px 0;
+    margin: 50px 0;
     position: relative;
 }
 
@@ -63,6 +59,7 @@
 
 
 .title-page-body .t-heading {
+    align-items: top;
     color: #000;
     text-align: left;
     font-variant-numeric: lining-nums tabular-nums;
@@ -75,8 +72,9 @@
     font-weight: 500;
     line-height: normal;
     letter-spacing: -0.572px;
-    padding: 10px;
+    padding: 24px;
     padding-left: 0;
+    padding-top: 0;
 }
 
 .title-page-body .t-body {

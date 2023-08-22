@@ -82,7 +82,7 @@ const TableofContent = () => {
 
     return (
         <div className='table-of-contents'>
-            {/* Patters */}
+            {/* Patterns */}
             <img className='pattern-1' src='./Assets/pattern.svg' alt='pattern' />
             <img className='pattern-2' src='./Assets/pattern.svg' alt='pattern' />
             {/* Header */}

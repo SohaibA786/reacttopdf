@@ -1,15 +1,10 @@
 .table-of-contents {
     background-color: white !important;
-    /* background: url('./Assets/title-back.jpeg'), lightgray 50% / cover no-repeat, linear-gradient(185deg, rgba(255, 255, 255, 0.46) 0%, rgba(166, 222, 255, 0.46) 100%), #FFF; */
-    /* background: linear-gradient(185deg, rgba(255, 255, 255, 0.46) 0%, rgba(166, 222, 255, 0.46) 100%); */
-    /* background-color: pink; */
 
-
-    width: 595px;
-    height: 842px;
+    width: calc(595px - 100px);
+    height: calc(842px - 60px);
     padding: 30px 50px;
     position: relative;
-    /* z-index: 10; */
     overflow: hidden;
 }
 
@@ -17,17 +12,17 @@
 .table-of-contents .pattern-1 {
     position: absolute;
     top: calc(-19px);
-    left: calc(563px + 92px);
+    left: calc(554px);
 }
 
 .table-of-contents .pattern-2 {
     position: absolute;
-    top: calc(544px + 50px);
-    left: calc(-52px);
+    top: calc(544px);
+    left: calc(-53px);
 }
 
 .toc-body {
-    margin: 56px 0;
+    margin: 50px 0;
     position: relative;
 }
 
@@ -66,7 +61,7 @@
     gap: 10px;
     align-items: center;
     justify-content: space-between;
-    margin: 4px 0;
+    /* margin: 4px 0; */
 }
 .toc-body .toc-sub-entry {
     display: flex;
@@ -76,7 +71,7 @@
     gap: 10px;
     align-items: center;
     justify-content: space-between;
-    margin: 4px 0;
+    /* margin: 4px 0; */
     
 }
 
