@@ -1,0 +1,223 @@
+.production-forecast {
+    background-color: white !important;
+    width: calc(595px - 100px);
+    height: calc(842px - 60px);
+    padding: 30px 50px;
+    position: relative;
+    overflow: hidden;
+}
+
+.pf-body {
+    margin: 25px 0;
+    position: relative;
+}
+
+.pf-body>p {
+    color: #003970;
+    /* font-variant-numeric: lining-nums tabular-nums;
+    font-feature-settings: 'clig' off, 'liga' off; */
+
+    /* Report/Header 5 */
+    /* font-family: Plus Jakarta Sans; */
+    font-size: 16px;
+    font-style: normal;
+    /* font-weight: 500; */
+    line-height: normal;
+    letter-spacing: -0.572px;
+    margin-bottom: 20px;
+}
+
+
+/* Data Tables */
+.pf-body .data-tables {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    /* background-color: pink; */
+    justify-content: space-between;
+}
+
+.pf-body .render-function .render-table {
+    width: 495px;
+    max-width: 495px;
+    border-spacing: 0px;
+    border-collapse: collapse;
+    /* border-top: 2px solid red; */
+
+}
+
+.pf-body .render-table thead {
+    color: #000;
+    /* font-variant-numeric: lining-nums tabular-nums;
+    font-feature-settings: 'clig' off, 'liga' off; */
+
+    /* Report/Body/Regular */
+    /* font-replaced */
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -0.572px;
+    text-align: left;
+    /* outline: 1px solid #000; */
+}
+
+.pf-body .render-table .left {
+    color: #000;
+    /* font-variant-numeric: lining-nums tabular-nums;
+    font-feature-settings: 'clig' off, 'liga' off; */
+
+    /* Report/Body/Small */
+    /* font-replaced */
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -0.572px;
+}
+
+.pf-body .render-table .right {
+    color: #000;
+    /* font-variant-numeric: lining-nums tabular-nums;
+    font-feature-settings: 'clig' off, 'liga' off; */
+
+    /* Report/Header 6 */
+    /* font-replaced */
+    font-size: 10px;
+    font-style: normal;
+    font-weight: bold;
+    line-height: normal;
+    letter-spacing: -0.572px;
+}
+
+.pf-body .render-table thead td:nth-child(1) {
+    padding: 5px 0px 5px 15px;
+}
+
+.pf-body .render-table thead td:nth-child(2) {
+    padding: 5px 15px 5px 15px;
+}
+
+.pf-body .render-table tbody {
+    border-top: 1px solid #A3A3A3;
+    border-bottom: 1px solid #A3A3A3;
+}
+
+.pf-body .render-table .left {
+    padding: 5px 0px 5px 15px;
+}
+
+.pf-body .render-table .right {
+    padding: 5px 15px 5px 15px;
+}
+
+.pf-body .render-table tbody tr:nth-child(odd) {
+    background-color: #EEE;
+    /* outline: 1px solid #000; */
+}
+
+
+.pf-body .stats-function>p {
+    color: #003970;
+    text-align: left;
+    /* font-variant-numeric: lining-nums tabular-nums;
+    font-feature-settings: 'clig' off, 'liga' off;
+     */
+    /* Report/Header 5 */
+    /* font-family: Plus Jakarta Sans; */
+    font-size: 16px;
+    font-style: normal;
+    /* font-weight: 500; */
+    line-height: 0;
+    letter-spacing: -0.572px;
+}
+
+.pf-body .stats-function {
+    margin: 30px 0;
+}
+
+.pf-body .stats-function .stats-text {
+    color: #868E96;
+    text-align: center;
+    /* font-family: Plus Jakarta Sans; */
+    font-size: 10.974px;
+    font-style: normal;
+    /* font-weight: 400; */
+    line-height: 18.813px;
+    /* 171.429% */
+}
+
+.pf-body .stats-function .number {
+    color: #045097;
+    text-align: center;
+    /* font-family: Plus Jakarta Sans; */
+    font-size: 15.677px;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 22.575px;
+    /* 144% */
+}
+
+.pf-body .stats-function .normal {
+    color: #868E96;
+    text-align: center;
+    /* font-family: Plus Jakarta Sans; */
+    font-size: 10.974px;
+    font-style: normal;
+    /* font-weight: 400; */
+    line-height: 18.813px;
+    /* 171.429% */
+}
+
+
+
+.pf-body .stats-function .percentage {
+    color: #868E96;
+    text-align: center;
+    /* font-family: Plus Jakarta Sans; */
+    font-size: 13.542px;
+    font-style: normal;
+    /* font-weight: bold; */
+    line-height: 18.813px;
+    /* 150% */
+}
+
+.pf-body .stats-function .stats {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 80px;
+    margin: 20px 0;
+    padding: 0 50px;
+}
+
+.pf-body .stats-function .chart {
+    position: relative;
+}
+
+.pf-body .stats-function .svg-text {
+    color: #868E96;
+    text-align: center;
+    /* font-family: Plus Jakarta Sans; */
+    font-size: 8.778px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 5px;
+    /* 171.429% */
+    position: absolute;
+    top: 35px;
+    left: 30px;
+}
+
+.pf-body .stats-function .svg-text .top {
+    color: #000;
+    text-align: center;
+    /* font-family: Plus Jakarta Sans; */
+    font-size: 15.801px;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 22.754px;
+    /* 144% */
+}

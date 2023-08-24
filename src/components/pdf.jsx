@@ -5,10 +5,13 @@ import TitlePage from './titlePage';
 import ProjectOverview from './projectOverview';
 import ModuleConfig from './moduleConfig';
 import DiagramView from './diagramView';
+import SimulationResults from './simulationResults.jsx';
+import ProductionForecast from './productionForecast';
+import ModuleInformation from './moduleInformation';
 
 import { PDFExport } from '@progress/kendo-react-pdf';
 
-import React, { useRef } from 'react';
+import React from 'react';
 
 
 const Pdf = () => {
@@ -30,10 +33,13 @@ const Pdf = () => {
             >
                 <TitlePage />
                 <TableofContent />
-                <Disclaimer />
                 <ProjectOverview />
                 <ModuleConfig />
                 <DiagramView />
+                <SimulationResults /> 
+                <ProductionForecast /> 
+                {/* <ModuleInformation /> */}
+                <Disclaimer />
             </PDFExport>
 
         </>

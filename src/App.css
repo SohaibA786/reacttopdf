@@ -1,6 +1,9 @@
 body {
+    /* @font-face: 'Algerian'; */
     font-family: 'Arial' !important;
-    /* font-family: Plus Jakarta Sans !important; */
+    /* font-family: "Plus Jakarta Sans" !important; */
     /* font-replaced */
+
+    background-color: aliceblue;
 }
 
