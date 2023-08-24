@@ -17,12 +17,16 @@
 .title-page {
     background-color: white !important;
     background: linear-gradient(185deg, rgba(255, 255, 255, 0.46) 0%, rgba(166, 222, 255, 0.46) 100%);
-
+    
     width: calc(595px - 100px);
     height: calc(842px - 60px);
+    /* width: calc((595px - 100px)*1.33);
+    height: calc((842px - 60px)*1.33); */
     padding: 30px 50px;
     position: relative;
     overflow: hidden;
+    
+    /* transform: scale(1.33); */
 }
 
 /* Patterns */
@@ -43,18 +47,21 @@
     position: relative;
 }
 
-.title-page-body>p {
+.title-page-body>h1 {
     color: #32608C;
-    font-variant-numeric: lining-nums tabular-nums;
-    font-feature-settings: 'clig' off, 'liga' off;
+    /* font-variant-numeric: lining-nums tabular-nums;
+    font-feature-settings: 'clig' off, 'liga' off; */
 
     /* Report/Header 1 */
-    font-family: Plus Jakarta Sans;
+    /* font-replaced */
     font-size: 28px;
     font-style: normal;
     font-weight: 500;
     line-height: 0;
-    letter-spacing: -0.572px;
+    /* letter-spacing: -0.572px; */
+    /* underline */
+    /* text-decoration: underline; */
+
 }
 
 
@@ -62,30 +69,32 @@
     align-items: top;
     color: #000;
     text-align: left;
-    font-variant-numeric: lining-nums tabular-nums;
-    font-feature-settings: 'clig' off, 'liga' off;
+    /* font-variant-numeric: lining-nums tabular-nums;
+    font-feature-settings: 'clig' off, 'liga' off; */
 
     /* Report/Header 5 */
-    font-family: Plus Jakarta Sans;
+    /* font-replaced */
     font-size: 16px;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
     letter-spacing: -0.572px;
-    padding: 24px;
+    /* padding: 24px; */
     padding-left: 0;
     padding-top: 0;
+    padding-right: 0;
+    min-width: 160px;
 }
 
 .title-page-body .t-body {
     color: #000;
     opacity: 0.8;
     /* text-align: justify; */
-    font-variant-numeric: lining-nums tabular-nums;
-    font-feature-settings: 'clig' off, 'liga' off;
+    /* font-variant-numeric: lining-nums tabular-nums;
+    font-feature-settings: 'clig' off, 'liga' off; */
 
     /* Report/Body/Large */
-    font-family: Plus Jakarta Sans;
+    /* font-replaced */
     font-size: 16px;
     font-style: normal;
     font-weight: 400;

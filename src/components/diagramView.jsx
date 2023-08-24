@@ -1,14 +1,14 @@
 import './diagramView.css';
 import Header from './subComponents/header';
 import Footer from './subComponents/footer';
+import Patterns from './subComponents/patterns';
 
 const DiagramView = () => {
 
     return (
         <div id='diagram-view' className='diagram-view'>
             {/* Patterns */}
-            <img className='pattern-1' src='./Assets/pattern.svg' alt='pattern' />
-            <img className='pattern-2' src='./Assets/pattern.svg' alt='pattern' />
+            <Patterns />
             {/* Header */}
             <Header />
             {/* Main Body */}

@@ -1,6 +1,7 @@
 import './moduleConfig.css';
 import Header from './subComponents/header';
 import Footer from './subComponents/footer';
+import Patterns from './subComponents/patterns';
 
 const ModuleConfig = () => {
     let moduleConfiguration = [
@@ -62,8 +63,7 @@ const ModuleConfig = () => {
     return (
         <div id='module-config' className='module-config'>
             {/* Patterns */}
-            <img className='pattern-1' src='./Assets/pattern.svg' alt='pattern' />
-            <img className='pattern-2' src='./Assets/pattern.svg' alt='pattern' />
+            <Patterns />
             {/* Header */}
             <Header />
             {/* Main Body */}

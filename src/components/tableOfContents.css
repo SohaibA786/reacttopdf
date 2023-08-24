@@ -8,19 +8,6 @@
     overflow: hidden;
 }
 
-/* Patterns */
-.table-of-contents .pattern-1 {
-    position: absolute;
-    top: calc(-19px);
-    left: calc(554px);
-}
-
-.table-of-contents .pattern-2 {
-    position: absolute;
-    top: calc(544px);
-    left: calc(-53px);
-}
-
 .toc-body {
     margin: 50px 0;
     position: relative;
@@ -28,11 +15,11 @@
 
 .toc-body>p {
     color: #003970;
-    font-variant-numeric: lining-nums tabular-nums;
-    font-feature-settings: 'clig' off, 'liga' off;
+    /* font-variant-numeric: lining-nums tabular-nums;
+    font-feature-settings: 'clig' off, 'liga' off; */
 
     /* Report/Header 1 */
-    font-family: Plus Jakarta Sans;
+    /* font-replaced */
     font-size: 28px;
     font-style: normal;
     font-weight: 500;
@@ -42,11 +29,11 @@
 
 .toc-body .toc-main {
     color: #000;
-    font-variant-numeric: lining-nums tabular-nums;
-    font-feature-settings: 'clig' off, 'liga' off;
+    /* font-variant-numeric: lining-nums tabular-nums;
+    font-feature-settings: 'clig' off, 'liga' off; */
 
     /* Report/Body/Regular */
-    font-family: Plus Jakarta Sans;
+    /* font-replaced */
     font-size: 14px;
     font-style: normal;
     font-weight: 400;

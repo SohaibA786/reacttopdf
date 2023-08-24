@@ -1,6 +1,7 @@
 import './tableOfContents.css';
 import Header from './subComponents/header';
 import Footer from './subComponents/footer';
+import Patterns from './subComponents/patterns';
 
 const TableofContent = () => {
 
@@ -83,8 +84,7 @@ const TableofContent = () => {
     return (
         <div className='table-of-contents'>
             {/* Patterns */}
-            <img className='pattern-1' src='./Assets/pattern.svg' alt='pattern' />
-            <img className='pattern-2' src='./Assets/pattern.svg' alt='pattern' />
+            <Patterns />
             {/* Header */}
             <Header />
             {/* Main Body */}

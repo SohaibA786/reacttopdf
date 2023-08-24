@@ -1,6 +1,7 @@
 import './projectOverview.css';
 import Header from './subComponents/header';
 import Footer from './subComponents/footer';
+// import Patterns from './subComponents/patterns';
 
 const ProjectOverview = () => {
     let projectInfo = [
@@ -127,8 +128,12 @@ const ProjectOverview = () => {
     return (
         <div  id='project-overview' className='project-overview'>
             {/* Patterns */}
-            <img className='pattern-1' src='./Assets/pattern.svg' alt='pattern' />
-            <img className='pattern-2' src='./Assets/pattern.svg' alt='pattern' />
+            {/* <Patterns /> */}
+            {/* Patterns */}
+            <img className='pat1' src='./Assets/pattern.png' alt='pattern' />
+            <img className='pat2' src='./Assets/pattern.png' alt='pattern' />
+            {/* <img className='pattern-1' src='./Assets/pattern.svg' alt='pattern' />
+            <img className='pattern-2' src='./Assets/pattern.svg' alt='pattern' /> */}
             {/* Header */}
             <Header />
             {/* Main Body */}

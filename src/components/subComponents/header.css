@@ -24,8 +24,9 @@
 
 .title-page-header-left>h1 {
     color: #000;
-    font-family: Plus Jakarta Sans;
-    font-size: 22.313px;
+    /* font-replaced */
+    /* font-size: 22.313px; */
+    font-size: 22px;
     font-style: normal;
     font-weight: 400;
     line-height: 0;
@@ -34,12 +35,12 @@
 
 .title-page-header-right>h1 {
     text-align: right;
-    font-variant-numeric: lining-nums tabular-nums;
-    font-feature-settings: 'clig' off, 'liga' off;
+    /* font-variant-numeric: lining-nums tabular-nums;
+    font-feature-settings: 'clig' off, 'liga' off; */
 
     /* Report/Body/Regular */
-    font-family: Plus Jakarta Sans;
-    font-size: 14px;
+    /* font-replaced */
+    font-size: 12px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;

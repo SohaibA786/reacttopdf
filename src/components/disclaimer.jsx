@@ -1,5 +1,6 @@
 import Header from './subComponents/header';
 import Footer from './subComponents/footer';
+import Patterns from './subComponents/patterns';
 import './disclaimer.css';
 
 const Disclaimer = () => {
@@ -15,8 +16,7 @@ const Disclaimer = () => {
             {/* Background Image */}
             <div className='background-image' />
             {/* Patterns */}
-            <img className='pattern-1' src='./Assets/pattern.svg' alt='pattern' />
-            <img className='pattern-2' src='./Assets/pattern.svg' alt='pattern' />
+            <Patterns />
             {/* Header */}
             <Header />
             {/* Main Body */}

@@ -1,0 +1,12 @@
+/* Patterns */
+.pattern-1 {
+    position: absolute;
+    top: calc(-19px);
+    left: calc(554px);
+}
+
+.pattern-2 {
+    position: absolute;
+    top: calc(544px);
+    left: calc(-53px);
+}

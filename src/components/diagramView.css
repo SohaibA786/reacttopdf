@@ -7,19 +7,6 @@
     overflow: hidden;
 }
 
-/* Patterns */
-.diagram-view .pattern-1 {
-    position: absolute;
-    top: calc(-19px);
-    left: calc(554px);
-}
-
-.diagram-view .pattern-2 {
-    position: absolute;
-    top: calc(544px);
-    left: calc(-53px);
-}
-
 .dv-body {
     margin: 50px 0;
     position: relative;
@@ -27,11 +14,11 @@
 
 .dv-body>p {
     color: #003970;
-    font-variant-numeric: lining-nums tabular-nums;
-    font-feature-settings: 'clig' off, 'liga' off;
+    /* font-variant-numeric: lining-nums tabular-nums;
+    font-feature-settings: 'clig' off, 'liga' off; */
 
     /* Report/Header 5 */
-    font-family: Plus Jakarta Sans;
+    /* font-replaced */
     font-size: 16px;
     font-style: normal;
     font-weight: 500;

@@ -1,5 +1,6 @@
 import './header.css';
 
+
 const Header = () => {
     return (
         <>
@@ -10,7 +11,7 @@ const Header = () => {
                     <h1>K2 Systems</h1>
                 </div>
                 <div className='title-page-header-right'>
-                    <h1>PV Smith Simulator</h1>
+                <h1>PV Smith Simulator</h1>
                 </div>
             </header >
             {/* Divider Line */}

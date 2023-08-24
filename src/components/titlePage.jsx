@@ -6,15 +6,15 @@ const TitlePage = () => {
 
     let titleData = [
         {
-            title: 'Project address',
+            title: 'Project address:',
             data: 'A19 Southbound, Ingleby Arncliffe, Northallerton DL6 3LG, UK',
         },
         {
-            title: 'Author',
+            title: 'Author:',
             data: 'Aditya Garimella',
         },
         {
-            title: 'Issue date & version',
+            title: 'Issue date & version:',
             data: '20/04/2023 | K2 Base Version 3.1.74.1',
         },
     ]
@@ -31,14 +31,14 @@ const TitlePage = () => {
             <Header />
             {/* Main Body */}
             <main className='title-page-body'>
-                <p>Base Report</p>
+                <h1>Base Report</h1>
                 <table>
                     <tbody>
                         {
                             titleData.map((item) => {
                                 return (
                                     <tr key={item.title}>
-                                        <td className='t-heading'>{item.title}:</td>
+                                        <td className='t-heading'>{item.title}</td>
                                         <td className='t-body'>{item.data}</td>
                                     </tr>
                                 );
