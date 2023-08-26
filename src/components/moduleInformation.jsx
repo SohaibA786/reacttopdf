@@ -5,10 +5,7 @@ import Patterns from './subComponents/patterns';
 
 import React from 'react';
 
-// import ApexCharts from "react-apexcharts"
 import { Line } from 'react-chartjs-2';
-// import faker from 'faker';
-
 import {
     Chart as ChartJS,
     CategoryScale,
@@ -18,17 +15,19 @@ import {
     Title,
     Tooltip,
     Legend,
-  } from 'chart.js';
-  
-  ChartJS.register(
+    Filler,
+} from 'chart.js';
+
+ChartJS.register(
     CategoryScale,
     LinearScale,
     PointElement,
     LineElement,
     Title,
     Tooltip,
-    Legend
-  );
+    Legend,
+    Filler,
+);
 
 
 function tableRender(tableData) {
@@ -44,7 +43,7 @@ function tableRender(tableData) {
                 <tbody>
                     {tableData.map((item, index) => {
                         return (
-                            <tr key={index} className={index % 2 == 0 ? 'one' : 'two'}>
+                            <tr key={index} className={index % 2 === 0 ? 'one' : 'two'}>
                                 <td className='left'>{item.title}</td>
                                 <td className='right'>{item.value}</td>
                             </tr>
@@ -58,38 +57,6 @@ function tableRender(tableData) {
 
 
 const ModuleInformation = () => {
-
-    // let state = {
-    //     series: [{
-    //         name: 'series1',
-    //         data: [31, 40, 28, 51, 42, 109, 100]
-    //     }, {
-    //         name: 'series2',
-    //         data: [11, 32, 45, 32, 34, 52, 41]
-    //     }],
-    //     options: {
-    //         chart: {
-    //             height: 350,
-    //             type: 'area'
-    //         },
-    //         dataLabels: {
-    //             enabled: false
-    //         },
-    //         stroke: {
-    //             curve: 'smooth'
-    //         },
-    //         xaxis: {
-    //             type: 'numbers',
-    //             categories: ["1", "2", "3", "4", "5", "6", "7"]
-    //         },
-    //         tooltip: {
-    //             x: {
-    //                 format: 'dd/MM/yy HH:mm'
-    //             },
-    //         },
-    //     },
-    // }
-
 
     let moduleConfiguration = [
         {
@@ -114,43 +81,72 @@ const ModuleInformation = () => {
         },
     ]
 
-    let percantages = [90, 10];
+    let options = {
+        responsive: false,
+        scales: {
+            x: {
+                display: true,
+                title: {
+                    display: true,
+                    text: 'Time in Years', // X-axis title
+                },
+                grid: {
+                    drawOnChartArea: false, // Extended vertical lines below x-axis only
+
+                },
+            },
+            y: {
+                beginAtZero: true,
+                display: true,
+                title: {
+                    display: true,
+                    text: 'Remaining Output in %', // X-axis title
+                },
+                grid: {
+                    display: true, // Show horizontal grid lines
+                },
+            },
+        },
+        plugins: {
+            legend: {
+                display: false, // Hide the legend
+            },
+        }
 
 
-    
- const options = {
-    responsive: true,
-    plugins: {
-      legend: {
-        position: 'top',
-      },
-      title: {
-        display: true,
-        text: 'Chart.js Line Chart',
-      },
-    },
-  };
-  
-  const labels = ['January', 'February', 'March', 'April', 'May', 'June', 'July'];
-  
-   const data = {
-    labels,
-    datasets: [
-      {
-        label: 'Dataset 1',
-        data: [81, 60, 29, 31, 46, 99, 108],
-        borderColor: 'rgb(255, 99, 132)',
-        backgroundColor: 'rgba(255, 99, 132, 0.5)',
-      },
-      {
-        label: 'Dataset 2',
-        data: [31, 40, 28, 51, 42, 109, 100],
-        borderColor: 'rgb(53, 162, 235)',
-        backgroundColor: 'rgba(53, 162, 235, 0.5)',
-      },
-    ],
-  };
+    }
+    let arr = [34, 35, 42, 39, 44, 39, 36, 34, 35, 40, 39, 44, 34, 35, 34, 35, 41, 39, 44];
+    arr = arr.map(item => item + 45);
+    let arr2 = [44, 39, 48, 45, 52, 49, 60, 44, 39, 48, 45, 52, 55, 60, 52, 45, 48, 45, 52];
+    arr2 = arr2.map(item => item + 50);
 
+    let state = {
+        data: {
+            // Add labels till 16
+            labels: ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16'],
+            datasets: [
+                {
+                    label: "Subscriptions",
+                    backgroundColor: "#04509777",
+                    borderColor: "#045097",
+                    data: arr,
+                    fill: true,
+                    tension: 0.4,
+                    pointRadius: 0,
+
+                },
+                {
+                    label: "Videos Made",
+                    backgroundColor: "#7ACCF977",
+                    borderColor: "#7ACCF9",
+                    data: arr2,
+                    fill: true,
+                    tension: 0.4,
+                    pointRadius: 0,
+                },
+            ]
+        }
+    }
     return (
         <div id='module-information' className='module-information'>
             {/* Patterns */}
@@ -164,14 +160,14 @@ const ModuleInformation = () => {
                     {/* PV Panel */}
                     {tableRender(moduleConfiguration)}
                 </div>
+
+                <p style={{marginTop: "30px", marginBottom: "20px"}}>Degradation of Module</p>
                 <Line
-                    options={options} data={data}
-                    height={405}
-                    width={405}
+                    height="315px"
+                    width="495px"
+                    options={options}
+                    data={state.data}
                 />
-                {/* <div id="chart">
-                    <ApexCharts options={state.options} series={state.series} type="area" height={350} />
-                </div> */}
             </main>
 
             {/* Footer */}

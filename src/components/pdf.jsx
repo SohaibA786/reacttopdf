@@ -31,16 +31,16 @@ const Pdf = () => {
                 margin={2}
                 fileName={`Report ${new Date().getFullYear()}`}
             >
-                <TitlePage />
+                {/* <TitlePage />
                 <TableofContent />
                 <ProjectOverview />
                 <ModuleConfig />
                 <DiagramView />
                 <SimulationResults /> 
-                <ProductionForecast />
+                <ProductionForecast /> */}
                 <ModuleInformation />
                 
-                <Disclaimer />
+                {/* <Disclaimer /> */}
             </PDFExport>
 
         </>

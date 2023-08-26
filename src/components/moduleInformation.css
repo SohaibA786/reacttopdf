@@ -1,3 +1,9 @@
+/* Add this CSS rule to remove the vertical bar of y-axis */
+.chartjs-render-monitor .chartjs-y-axis {
+    border-left: none !important;
+  }
+
+
 .module-information {
     background-color: white !important;
     width: calc(595px - 100px);
