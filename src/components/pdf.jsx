@@ -37,8 +37,9 @@ const Pdf = () => {
                 <ModuleConfig />
                 <DiagramView />
                 <SimulationResults /> 
-                <ProductionForecast /> 
-                {/* <ModuleInformation /> */}
+                <ProductionForecast />
+                <ModuleInformation />
+                
                 <Disclaimer />
             </PDFExport>
 
