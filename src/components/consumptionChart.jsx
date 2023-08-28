@@ -1,34 +1,30 @@
-import './moduleInformation.css';
+import './consumptionChart.css';
 import Header from './subComponents/header';
 import Footer from './subComponents/footer';
 import Patterns from './subComponents/patterns';
 
 import React from 'react';
-
-import { Line } from 'react-chartjs-2';
+import { Bar } from 'react-chartjs-2';
 import {
     Chart as ChartJS,
     CategoryScale,
     LinearScale,
-    PointElement,
-    LineElement,
     Title,
     Tooltip,
-    Legend,
     Filler,
+    BarElement,
+    Legend,
 } from 'chart.js';
 
 ChartJS.register(
     CategoryScale,
     LinearScale,
-    PointElement,
-    LineElement,
     Title,
     Tooltip,
-    Legend,
     Filler,
+    BarElement,
+    Legend,
 );
-
 
 function tableRender(tableData) {
     return (
@@ -62,7 +58,7 @@ function chartBallText(data) {
                 data.map((item, index) => {
                     return (
                         <div key={index} className='chart-ball-text'>
-                            <div className='ball' style={{ backgroundColor: item.borderColor, height: "15px", width: "15px", borderRadius: "50%" }}></div>
+                            <div className='ball' style={{ backgroundColor: item.backgroundColor, height: "15px", width: "15px", borderRadius: "50%" }}></div>
                             <p>{item.label}</p>
                         </div>
                     )
@@ -73,9 +69,9 @@ function chartBallText(data) {
 }
 
 
-const ModuleInformation = () => {
+const ConsumptionChart = () => {
 
-    let moduleConfiguration = [
+    let consumptionChart = [
         {
             title: 'Installation roof type',
             value: 'A19 South Exelby',
@@ -92,14 +88,11 @@ const ModuleInformation = () => {
             title: 'Author',
             value: 'Aditya Garimella',
         },
-        {
-            title: 'Author',
-            value: 'Aditya Garimella',
-        },
     ]
 
     let options = {
         responsive: false,
+
         plugins: {
             tooltip: {
                 enabled: false // <-- this option disables tooltips
@@ -115,17 +108,18 @@ const ModuleInformation = () => {
                 title: {
                     color: '#000',
                     font: {
-                        size: 11,
+                        size: 10,
                     },
                     display: true,
-                    text: 'Time in Years', // X-axis title
+                    text: 'Month', // X-axis title
                 },
                 grid: {
-                    drawOnChartArea: false, // Extended vertical lines below x-axis only
+                    display: false, // Extended vertical lines below x-axis only
+                    drawBorder: false,
                 },
             },
             y: {
-                ticks: { color: '#929292', font: { size: 10 }, padding: 5, },
+                ticks: { color: '#929292', font: { size: 10 }, padding: 10, },
                 beginAtZero: true,
                 title: {
                     color: '#000',
@@ -133,64 +127,49 @@ const ModuleInformation = () => {
                         size: 10,
                     },
                     display: true,
-                    text: 'Remaining output in %', // Y-axis title
+                    text: 'Energy in kWh', // Y-axis title
                 },
                 grid: {
-                    display: true, // Show horizontal grid lines
                     drawBorder: false, // <-- this removes y-axis line
-                },
+                }
             },
         },
-    }
-    let arr = [34, 35, 42, 39, 44, 39, 36, 34, 35, 40, 39, 44, 34, 35, 34, 35, 41, 39, 44];
-    arr = arr.map(item => item + 45);
-    let arr2 = [44, 39, 48, 45, 52, 49, 60, 44, 39, 48, 45, 52, 55, 60, 52, 45, 48, 45, 52];
-    arr2 = arr2.map(item => item + 50);
+    };
 
     let state = {
         data: {
-            // Add labels till 16
-            labels: ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16'],
+            labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Nov', 'Dec'],
             datasets: [
                 {
-                    label: "PV Generator Energy (AC Grid)",
-                    backgroundColor: "#04509777",
-                    borderColor: "#045097",
-                    data: arr,
-                    fill: true,
-                    tension: 0.4,
-                    pointRadius: 0,
+                    label: 'Consumption',
+                    backgroundColor: '#045097',
+                    borderColor: '#045097',
+                    borderWidth: 1,
+                    data: [2500, 1900, 3000, 5000, 4000, 3000, 6500, 6000, 2000, 3000, 4000, 5000],
+                    borderRadius: 10, // Round the top edges of bars
+                    barThickness: 8,
+                },
+            ],
+        },
+    };
 
-                },
-                {
-                    label: "Energy from the Grid",
-                    backgroundColor: "#7ACCF977",
-                    borderColor: "#7ACCF9",
-                    data: arr2,
-                    fill: true,
-                    tension: 0.4,
-                    pointRadius: 0,
-                },
-            ]
-        }
-    }
     return (
-        <div id='module-information' className='module-information'>
+        <div id='consumption-chart' className='consumption-chart'>
             {/* Patterns */}
             <Patterns />
             {/* Header */}
             <Header />
             {/* Main Body */}
-            <main className='mi-body'>
-                <p>Module Information</p>
+            <main className='cc-body'>
+                <p>Consumption Chart</p>
                 <div className='data-tables'>
                     {/* PV Panel */}
-                    {tableRender(moduleConfiguration)}
+                    {tableRender(consumptionChart)}
                 </div>
 
-                <p style={{ marginTop: "30px", marginBottom: "20px" }}>Degradation of Module</p>
-                <Line
-                    height="315px"
+                <p style={{ marginTop: "30px", marginBottom: "20px" }}>Chart</p>
+                <Bar
+                    height="340px"
                     width="495px"
                     options={options}
                     data={state.data}
@@ -206,4 +185,5 @@ const ModuleInformation = () => {
     );
 };
 
-export default ModuleInformation;
+export default ConsumptionChart;
+

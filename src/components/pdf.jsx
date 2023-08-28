@@ -8,6 +8,7 @@ import DiagramView from './diagramView';
 import SimulationResults from './simulationResults.jsx';
 import ProductionForecast from './productionForecast';
 import ModuleInformation from './moduleInformation';
+import ConsumptionChart from './consumptionChart';
 
 import { PDFExport } from '@progress/kendo-react-pdf';
 
@@ -37,10 +38,12 @@ const Pdf = () => {
                 <ModuleConfig />
                 <DiagramView />
                 <SimulationResults /> 
-                <ProductionForecast /> */}
+                <ProductionForecast />
                 <ModuleInformation />
                 
-                {/* <Disclaimer /> */}
+                <Disclaimer /> */}
+                <ModuleInformation />
+                <ConsumptionChart />
             </PDFExport>
 
         </>
